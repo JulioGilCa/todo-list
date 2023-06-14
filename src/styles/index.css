@@ -1,10 +1,17 @@
 body {
-  width: 100%;
+  background: #ecf0f3;
 }
 
 .container {
   display: flex;
   flex-direction: column;
+  margin-top: 5rem;
+  width: 650px;
+  border-radius: 20px;
+  padding: 1rem;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
 }
 
 .header {
@@ -12,8 +19,8 @@ body {
   align-items: center;
   padding: 10px;
   justify-content: space-between;
-  background-color: rgb(40, 7, 185);
-  color: white;
+  /* background-color: rgb(40, 7, 185); */
+  color: grey;
   text-align: center;
   border-radius: 10px;
   margin: 10px 0px 10px 0px;
@@ -21,7 +28,7 @@ body {
 
 li {
   list-style: none;
-  font-size: 14px;
+  font-size: 18px;
   font-family: "Courier New", Courier, monospace;
   border-bottom: 1px solid grey;
   width: 100%;
@@ -34,7 +41,7 @@ li {
 }
 
 .addTask {
-  border: none !important;
+  border: 0.5px solid;
   margin: 0px 0px 0px 10px;
   align-items: flex-end;
   padding: 1px;
@@ -44,15 +51,23 @@ ul {
   padding-left: 0;
 }
 
-input,
-p {
+.input-box {
+  width: 100%;
+  padding: 5px;
   font-size: 16px;
   font-family: "Courier New", Courier, monospace;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
 }
 
 .task-box {
   padding: 10px;
   margin-top: 10px;
-  background-color: lightblue;
   border-radius: 10px;
 }
