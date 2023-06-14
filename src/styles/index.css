@@ -2,37 +2,57 @@ body {
   width: 100%;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
-  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  background-color: rgb(40, 7, 185);
   color: white;
   text-align: center;
+  border-radius: 10px;
   margin: 10px 0px 10px 0px;
 }
 
 li {
   list-style: none;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Courier New", Courier, monospace;
+  border-bottom: 1px solid grey;
+  width: 100%;
+}
+
+.viewTask {
   display: flex;
-  justify-content: space-between;
-  text-decoration: none;
-  border: 1px solid grey;
+  align-items: flex-end;
   margin-bottom: 5px;
-  border-radius: 10px;
 }
 
 .addTask {
-  border-radius: 2px;
+  border: none !important;
+  margin: 0px 0px 0px 10px;
+  align-items: flex-end;
+  padding: 1px;
 }
 
 ul {
-  display: flex;
-  flex-direction: column;
+  padding-left: 0;
 }
 
 input,
 p {
   font-size: 16px;
   font-family: "Courier New", Courier, monospace;
-  text-align: start;
+}
+
+.task-box {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: lightblue;
+  border-radius: 10px;
 }
